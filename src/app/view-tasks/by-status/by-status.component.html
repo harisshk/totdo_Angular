@@ -1,0 +1,32 @@
+<button mat-stroked-button (click)="status('done')">Completed</button>
+<button mat-stroked-button (click)="status('undone')">Uncompleted</button>
+
+<table *ngIf="tasks.length!=0" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Sno</th>
+            <th>Things Todo</th>
+            <th>Date created</th>
+            <th>Status</th>
+            <th>options</th>
+        </tr>
+    </thead>
+    <tbody >
+        <tr [style.background-color]="getBackgroundColor(data.TaskStatus)" *ngFor="let data of tasks;let i=index">
+            
+            <td>{{i+1}}</td>
+            <td>{{data.ThingsTodo}}</td>
+           
+            <td>{{data.DateCreated|date}}</td>
+            <td>{{data.TaskStatus}}</td>
+            <td>
+                <button  mat-icon-button (click)='openEdit(data)'>
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button (click)='delt(data.SerialNo)'>
+                  <mat-icon>delete</mat-icon>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+<div class="form">
+    <input class="inputbox" matInput type="text" placeholder="Enter the Task" [(ngModel)]="EnteredTask">
+    <button mat-button  matSuffix mat-icon-button (click)="EnteredTask=''">
+      <mat-icon>close</mat-icon>
+    </button>
+    <br>
+    <button mat-flat-button color="primary" (click)="addTask(EnteredTask)">Submit</button>
+</div>
+<div>
+
+</div>
+<div class="banner">
+  Click on view taks to view your task
+</div>
+<div class="fire">
+  <div class="firepit"></div>
+</div>

@@ -1,0 +1,50 @@
+<div class="container">
+   <mat-tab-group>
+       <mat-tab label="Login">
+           
+            <form>
+                <mat-form-field class="input">
+                    <mat-label class="input">Username</mat-label>
+                    <input matInput >
+                  </mat-form-field>
+                  <mat-form-field class="input">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password">
+                  </mat-form-field>
+                  <br>
+                  <button mat-raised-button>Login</button>
+            </form>
+
+       </mat-tab>
+       <mat-tab label="Signup">
+            <form>
+                <mat-form-field class="input-s">
+                    <mat-label>Name</mat-label>
+                    <input type="text" matInput>
+                </mat-form-field>
+                <mat-form-field class="input-s">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Date of Birth</mat-label>
+                    <input type="date" matInput>
+                </mat-form-field>
+                <br>
+                <mat-form-field class="input-s">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput [(ngModel)]="password">
+                </mat-form-field>
+                <mat-form-field class="input-s">
+                    <mat-label>Confirm Password</mat-label>
+                    <input type="password" matInput>
+                </mat-form-field>
+              
+                
+            </form>
+            <button mat-raised-button color="primary">
+                Submit
+            </button>
+       </mat-tab>
+   </mat-tab-group>
+</div>

@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+    <button [routerLink]="['/Home']" mat-icon-button   >
+        <mat-icon>home</mat-icon>
+    </button>
+    
+    <button [routerLink]="['/ViewTasks']" mat-button   >
+        View Tasks
+    </button>
+    <div class="right"></div>
+    <button [routerLink]="['/Login']" mat-button   >
+        Login
+    </button>
+   
+</mat-toolbar>
+
+<router-outlet></router-outlet>

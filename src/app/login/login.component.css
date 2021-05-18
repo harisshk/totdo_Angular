@@ -1,0 +1,27 @@
+.container{
+    background-color: beige;
+    width: 470px;
+    height: 70%;
+    margin: 70px 400px ;
+    padding: 10px 50px ;
+    position:relative;
+    border-radius: 20px;
+}
+.head{
+    font-size: 40px;
+    padding-top: 10px;
+    
+}
+.input{
+    font-size: 17px;
+    width: 300px;
+    padding-top:7px;
+}
+button{
+    width: 80px;
+}
+.input-s{
+    font-size: 15px;
+    padding-top: 4px;
+    width: 300px;
+}

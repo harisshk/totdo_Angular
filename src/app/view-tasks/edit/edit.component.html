@@ -1,0 +1,13 @@
+<div class="container">
+<mat-dialog-content>
+    <h1>Edit Status</h1>
+</mat-dialog-content>
+<span><h2>Change status of {{task}}</h2><span>
+<br>
+<mat-radio-group [(ngModel)]="status" aria-label="Select the status">
+    <mat-radio-button [checked]="status=='done'" value='done'>Done</mat-radio-button>
+    <mat-radio-button  [checked]="status=='undone'" value='undone'>Undone</mat-radio-button>
+  </mat-radio-group>
+  <mat-dialog-actions>
+    <button mat-button (click)="update()" mat-dialog-close>Save</button>
+  </mat-dialog-actions>

@@ -1,0 +1,23 @@
+.form{
+    margin: 1% 490px;  
+}
+.inputbox{
+    width: 200px;
+    height:40px;
+}
+.banner{
+    width: 100%;
+    height: 50px;
+    
+    font-size: 25px;
+    animation: banner infinite linear 9s;
+}
+@keyframes banner{
+    from {
+        transform: translateX(-400px);    
+    }
+    to{
+        transform: translateX(1400px);
+    }
+
+}
